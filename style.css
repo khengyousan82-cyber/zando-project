@@ -1,0 +1,356 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  width: 1340px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aliceblue;
+  z-index: 100;
+  top: 0;
+  position: fixed;
+}
+.header.left{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-content a:hover{
+  text-decoration: underline;
+}
+.header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 700 ;
+}
+.dropdown .dropdown-content {
+  display: none;
+  left: 0;
+  position: fixed;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  padding: 20px 15vw;
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+@media (width <= 1350px) {
+  .dropdown .dropdown-content {
+    padding: 20px 20px ;
+  }
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  transition: 0.5s ease;
+}
+
+.dropdown-content .top {
+  margin-block: 20px;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+.dropdown-content .content {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.dropdown-content .content div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: 100;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+.menu-logo{
+    display: none;
+    gap:20px ;
+}
+.header nav i{
+    font-size: 25px;
+    display: none;
+}
+@media (width<=1178px) {
+    .header nav a{
+    text-decoration: none;
+    color: black;
+    }
+    .header nav div{
+        display: flex;
+    }
+    .header nav i{
+        display: block;
+    }
+    .header ul li{
+      display: none;
+    }
+    .header{
+        width: 100%;
+        padding-inline:20px ;
+    }
+    .logo{
+      display: none;
+    }
+}
+.dropdown .dropdown-content{
+  display: none;
+  left: 0;
+  position: fixed;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  padding: 20px 20vw;
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+@media (width <= 1350px) {
+  .dropdown .dropdown-content{
+    padding: 20px 20px;
+  }
+}
+.header img{
+    width: 130px;
+    display: flex;
+    justify-content: center;
+}
+.New-in{
+  display: flex;
+  flex-direction: row;
+}
+.search {
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+}
+.search input{
+    width: 110px;
+    height: 45px;
+    font-size: 20px;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 5px;
+}
+.icon{
+    padding: 7px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.icon:hover{
+    background-color:rgb(253, 225, 225) ;
+}
+ i:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(253, 225, 225);
+}
+.search input:hover{
+    background-color: rgb(253, 225, 225);
+}
+.right {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.login-acc{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.login-acc button{
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight:700;
+    border: none;
+}
+.login-acc button:hover{
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight:700;
+    border: none;
+    background-color: rgb(253, 225, 225);
+}
+.main{
+  width: 1340px;
+}
+.slide-show{
+ width: 100%;
+ height: 650px;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-content{
+  position: absolute;
+  line-height: 110px;
+}
+
+.slide-content p{
+  font-size: 70px;
+  color: white;
+}
+
+.slide-content .dis{
+  font-size: 200px;
+  color: white;
+  font-weight: 700;
+}
+
+.btn-shop{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-shop button{
+  padding: 15px 40px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(236, 228, 228);
+}
+.btn-shop button:hover{
+  transform: translateY(-5px);
+  transform: 1s;
+  padding: 15px 40px;
+  box-shadow: 0px 0px 0px rgb(236, 228, 228);
+  -webkit-transform: 1s;
+  -moz-transform: 1s;
+  -ms-transform: 1s;
+  -o-transform: 1s;
+}
+.logo-img{
+  display: flex;
+  width: 1330px;
+  justify-content: space-between;
+}
+.logo-img img{
+  width: 150px;
+}
+.hero-sec{
+  width: 1340px;
+  height: 580px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero-sec img{
+  width: 32%;
+  height: 100%;
+}
+.img1{
+  padding-top: 20px;
+width: 1340px;
+height:670px ;
+display: flex;
+justify-content: space-between;
+}
+.img1 img{
+  width: 49%;
+  height: 100%;
+}
+.blak{
+  margin-top: 50px;
+  width: 1340px;
+}
+.blak-header{
+  display: flex;
+  justify-content: space-between;
+}
+.blak-header a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+.blak-container{
+  margin-top: 20px;
+  width: 100%;
+  height: 525px;
+  display: flex;
+  justify-content: space-between;
+}
+.blak-container.blak-content{
+  width: 1340px;
+  height: 100%;
+  background-color: azure;
+}
+.blak-content img{
+  width: 325px;
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price{
+  padding-left: 10px;
+  display: flex;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.price p{
+  color: red;
+}
+.text p{
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.footer{
+  width: 1340px;
+  height: 500px;
+  background-color: aqua;
+}
